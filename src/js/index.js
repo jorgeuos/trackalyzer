@@ -1,6 +1,6 @@
 'use strict'
 /* eslint-env browser */
-/* globals chrome, Wappalyzer, Utils */
+/* globals chrome, Trackalyzer, Utils */
 
 const {
   setTechnologies,
@@ -9,7 +9,7 @@ const {
   analyzeManyToMany,
   resolve,
   getTechnology,
-} = Wappalyzer
+} = Trackalyzer
 const { agent, promisify, getOption, setOption, open, globEscape } = Utils
 
 const expiry = 1000 * 60 * 60 * 48
@@ -31,9 +31,10 @@ const initPromise = new Promise((resolve) => {
 
 function getRequiredTechnologies(name, categoryId) {
   return name
-    ? Wappalyzer.requires.find(({ name: _name }) => _name === name).technologies
+    ? Trackalyzer.requires.find(({ name: _name }) => _name === name)
+        .technologies
     : categoryId
-    ? Wappalyzer.categoryRequires.find(
+    ? Trackalyzer.categoryRequires.find(
         ({ categoryId: _categoryId }) => _categoryId === categoryId
       ).technologies
     : undefined
@@ -94,12 +95,12 @@ const Driver = {
 
       if (current) {
         open(
-          'https://www.wappalyzer.com/installed/?utm_source=installed&utm_medium=extension&utm_campaign=wappalyzer'
+          'https://www.jorgeuos.com/installed/?utm_source=installed&utm_medium=extension&utm_campaign=wappalyzer'
         )
       }
     } else if (version !== previous && upgradeMessage) {
       open(
-        `https://www.wappalyzer.com/upgraded/?utm_source=upgraded&utm_medium=extension&utm_campaign=wappalyzer`,
+        `https://www.jorgeuos.com/upgraded/?utm_source=upgraded&utm_medium=extension&utm_campaign=wappalyzer`,
         false
       )
     }
@@ -167,7 +168,7 @@ const Driver = {
    * Get all categories
    */
   getCategories() {
-    return Wappalyzer.categories
+    return Trackalyzer.categories
   },
 
   /**
@@ -176,6 +177,8 @@ const Driver = {
    * @param {String} body
    */
   post(url, body) {
+    // eslint-disable-next-line no-console
+    console.log('Driver post', url, body)
     return fetch(url, {
       method: 'POST',
       body: JSON.stringify(body),
@@ -200,7 +203,7 @@ const Driver = {
   analyzeJs(url, js, requires, categoryRequires) {
     const technologies =
       getRequiredTechnologies(requires, categoryRequires) ||
-      Wappalyzer.technologies
+      Trackalyzer.technologies
 
     return Driver.onDetect(
       url,
@@ -226,7 +229,7 @@ const Driver = {
   analyzeDom(url, dom, requires, categoryRequires) {
     const technologies =
       getRequiredTechnologies(requires, categoryRequires) ||
-      Wappalyzer.technologies
+      Trackalyzer.technologies
 
     return Driver.onDetect(
       url,
@@ -419,6 +422,8 @@ const Driver = {
 
     const { hostname } = new URL(initiatorUrl)
 
+    Driver.log({ hostname, source: 'onScriptRequestComplete' })
+
     if (!Driver.cache.hostnames[hostname]) {
       Driver.cache.hostnames[hostname] = {}
     }
@@ -528,11 +533,11 @@ const Driver = {
    * Get all technologies
    */
   getTechnologies() {
-    return Wappalyzer.technologies
+    return Trackalyzer.technologies
   },
 
   /**
-   * Check if Wappalyzer has been disabled for the domain
+   * Check if Trackalyzer has been disabled for the domain
    */
   async isDisabledDomain(url) {
     try {
@@ -630,10 +635,10 @@ const Driver = {
 
     // Look for technologies that require other technologies to be present on the page
     const requires = [
-      ...Wappalyzer.requires.filter(({ name }) =>
+      ...Trackalyzer.requires.filter(({ name }) =>
         resolved.some(({ name: _name }) => _name === name)
       ),
-      ...Wappalyzer.categoryRequires.filter(({ categoryId }) =>
+      ...Trackalyzer.categoryRequires.filter(({ categoryId }) =>
         resolved.some(({ categories }) =>
           categories.some(({ id }) => id === categoryId)
         )
@@ -707,7 +712,7 @@ const Driver = {
       )
     )
 
-    Driver.log({ hostname, technologies: resolved })
+    Driver.log({ hostname, technologies: resolved, type: 'detections' })
   },
 
   /**
@@ -792,6 +797,7 @@ const Driver = {
       active: true,
       currentWindow: true,
     })
+    Driver.log({ tab, source: 'getDetections' })
 
     if (!tab) {
       Driver.error(new Error('getDetections: no active tab found'))
@@ -927,13 +933,17 @@ const Driver = {
   },
 
   /**
-   * Anonymously send identified technologies to wappalyzer.com
+   * Anonymously send identified technologies to jorgeuos.com
    * This function can be disabled in the extension settings
    */
   async ping() {
+    Driver.log({ message: 'Send anonymously', source: 'ping' })
+
     const tracking = await getOption('tracking', true)
+    Driver.log({ message: 'tracking', source: 'ping', tracking })
     const termsAccepted =
       agent === 'chrome' || (await getOption('termsAccepted', false))
+    Driver.log({ message: 'termsAccepted', source: 'ping', termsAccepted })
 
     if (tracking && termsAccepted) {
       const urls = Object.keys(Driver.cache.hostnames).reduce(
@@ -977,17 +987,24 @@ const Driver = {
 
       const count = Object.keys(urls).length
 
-      const lastPing = await getOption('lastPing', Date.now())
+      const lastPing = await getOption('lastPing')
+      // Format YYYY-MM-DD HH:MM:SS
+      const lastPingPretty = new Date(lastPing).toISOString().slice(0, -5)
+      Driver.log({ message: 'lastPing date', source: 'ping', lastPingPretty })
+
+      const runEvery = 1000 * 60 * 10 // 10 minutes
 
       if (
         count &&
-        ((count >= 25 && lastPing < Date.now() - 1000 * 60 * 60) ||
+        ((count >= 5 && lastPing < Date.now() - runEvery) ||
           (count >= 5 && lastPing < Date.now() - expiry))
       ) {
         await setOption('lastPing', Date.now())
+        Driver.log({ message: 'Try ping', source: 'ping', lastPing })
 
         try {
-          await Driver.post('https://ping.wappalyzer.com/v2/', {
+          // await Driver.post('https://ping.jorgeuos.com/v2/', {
+          await Driver.post('https://api.jorgeuos.com/trackalyzer.php', {
             version: chrome.runtime.getManifest().version,
             urls,
           })
@@ -999,6 +1016,8 @@ const Driver = {
         Object.keys(Driver.cache.hostnames).forEach((hostname) => {
           Driver.cache.hostnames[hostname].hits = 0
         })
+      } else {
+        Driver.log({ message: 'No ping', source: 'ping', count })
       }
     }
   },

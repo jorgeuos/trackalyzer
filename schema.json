@@ -1,5 +1,5 @@
 {
-  "title": "Wappalyzer schema",
+  "title": "Trackalyzer schema",
   "definitions": {
     "non-empty-non-blank-string": {
       "type": "string",

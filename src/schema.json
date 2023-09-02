@@ -3,7 +3,7 @@
   "properties": {
     "tracking": {
       "title": "Tracking enabled",
-      "description": "Anonymously send identified technologies to wappalyzer.com",
+      "description": "Anonymously send identified technologies to jorgeuos.com",
       "type": "boolean"
     }
   }

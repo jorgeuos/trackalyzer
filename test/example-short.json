@@ -1,0 +1,171 @@
+{
+  "https:\/\/accounts.shopify.com": {
+    "technologies": {
+      "Shopify": {
+        "version": "",
+        "hits": 1
+      },
+      "Stimulus": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Font API": {
+        "version": "",
+        "hits": 1
+      },
+      "Lodash": {
+        "version": "4.17.21",
+        "hits": 1
+      },
+      "jQuery": {
+        "version": "3.7.0",
+        "hits": 1
+      },
+      "core-js": {
+        "version": "2.5.0",
+        "hits": 1
+      },
+      "BugSnag": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Analytics": {
+        "version": "GA4",
+        "hits": 1
+      },
+      "HSTS": {
+        "version": "",
+        "hits": 1
+      },
+      "Cloudflare": {
+        "version": "",
+        "hits": 1
+      },
+      "Babel": {
+        "version": "",
+        "hits": 1
+      },
+      "Gravatar": {
+        "version": "",
+        "hits": 1
+      },
+      "HTTP\/3": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/adespresso.com": {
+    "technologies": {
+      "WordPress": {
+        "version": "5.8.2",
+        "hits": 1
+      },
+      "Sentry": {
+        "version": "",
+        "hits": 1
+      },
+      "MySQL": {
+        "version": "",
+        "hits": 1
+      },
+      "PHP": {
+        "version": "",
+        "hits": 1
+      },
+      "Bootstrap": {
+        "version": "3.3.5",
+        "hits": 1
+      },
+      "WP Rocket": {
+        "version": "",
+        "hits": 1
+      },
+      "Yoast SEO": {
+        "version": "17.4",
+        "hits": 1
+      },
+      "Google Font API": {
+        "version": "",
+        "hits": 1
+      },
+      "Mixpanel": {
+        "version": "",
+        "hits": 1
+      },
+      "HubSpot": {
+        "version": "",
+        "hits": 1
+      },
+      "core-js": {
+        "version": "3.8.3",
+        "hits": 1
+      },
+      "Quora Pixel": {
+        "version": "",
+        "hits": 1
+      },
+      "Optimizely": {
+        "version": "",
+        "hits": 1
+      },
+      "Linkedin Insight Tag": {
+        "version": "",
+        "hits": 1
+      },
+      "jQuery Migrate": {
+        "version": "3.3.2",
+        "hits": 1
+      },
+      "jQuery": {
+        "version": "3.6.0",
+        "hits": 1
+      },
+      "HubSpot Analytics": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Tag Manager": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Analytics": {
+        "version": "",
+        "hits": 1
+      },
+      "Facebook Pixel": {
+        "version": "",
+        "hits": 1
+      },
+      "reCAPTCHA": {
+        "version": "",
+        "hits": 1
+      },
+      "RSS": {
+        "version": "",
+        "hits": 1
+      },
+      "Open Graph": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/another.example.com": {
+    "technologies": {
+      "AndSoOn": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  }
+}

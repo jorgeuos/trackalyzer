@@ -1,0 +1,1405 @@
+{
+  "https:\/\/accounts.shopify.com": {
+    "technologies": {
+      "Shopify": {
+        "version": "",
+        "hits": 1
+      },
+      "Stimulus": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Font API": {
+        "version": "",
+        "hits": 1
+      },
+      "Lodash": {
+        "version": "4.17.21",
+        "hits": 1
+      },
+      "jQuery": {
+        "version": "3.7.0",
+        "hits": 1
+      },
+      "core-js": {
+        "version": "2.5.0",
+        "hits": 1
+      },
+      "BugSnag": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Analytics": {
+        "version": "GA4",
+        "hits": 1
+      },
+      "HSTS": {
+        "version": "",
+        "hits": 1
+      },
+      "Cloudflare": {
+        "version": "",
+        "hits": 1
+      },
+      "Babel": {
+        "version": "",
+        "hits": 1
+      },
+      "Gravatar": {
+        "version": "",
+        "hits": 1
+      },
+      "HTTP\/3": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/adespresso.com": {
+    "technologies": {
+      "WordPress": {
+        "version": "5.8.2",
+        "hits": 1
+      },
+      "Sentry": {
+        "version": "",
+        "hits": 1
+      },
+      "MySQL": {
+        "version": "",
+        "hits": 1
+      },
+      "PHP": {
+        "version": "",
+        "hits": 1
+      },
+      "Bootstrap": {
+        "version": "3.3.5",
+        "hits": 1
+      },
+      "WP Rocket": {
+        "version": "",
+        "hits": 1
+      },
+      "Yoast SEO": {
+        "version": "17.4",
+        "hits": 1
+      },
+      "Google Font API": {
+        "version": "",
+        "hits": 1
+      },
+      "Mixpanel": {
+        "version": "",
+        "hits": 1
+      },
+      "HubSpot": {
+        "version": "",
+        "hits": 1
+      },
+      "core-js": {
+        "version": "3.8.3",
+        "hits": 1
+      },
+      "Quora Pixel": {
+        "version": "",
+        "hits": 1
+      },
+      "Optimizely": {
+        "version": "",
+        "hits": 1
+      },
+      "Linkedin Insight Tag": {
+        "version": "",
+        "hits": 1
+      },
+      "jQuery Migrate": {
+        "version": "3.3.2",
+        "hits": 1
+      },
+      "jQuery": {
+        "version": "3.6.0",
+        "hits": 1
+      },
+      "HubSpot Analytics": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Tag Manager": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Analytics": {
+        "version": "",
+        "hits": 1
+      },
+      "Facebook Pixel": {
+        "version": "",
+        "hits": 1
+      },
+      "reCAPTCHA": {
+        "version": "",
+        "hits": 1
+      },
+      "RSS": {
+        "version": "",
+        "hits": 1
+      },
+      "Open Graph": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/admin.servebolt.com": {
+    "technologies": {
+      "Drupal": {
+        "version": "7",
+        "hits": 1
+      },
+      "PHP": {
+        "version": "",
+        "hits": 1
+      },
+      "ZURB Foundation": {
+        "version": "6.2.4",
+        "hits": 1
+      },
+      "Intercom": {
+        "version": "",
+        "hits": 1
+      },
+      "core-js": {
+        "version": "3.12.1",
+        "hits": 1
+      },
+      "Piwik PRO Core": {
+        "version": "",
+        "hits": 1
+      },
+      "jQuery": {
+        "version": "2.2.4",
+        "hits": 1
+      },
+      "Google Analytics": {
+        "version": "GA4",
+        "hits": 1
+      },
+      "HSTS": {
+        "version": "",
+        "hits": 1
+      },
+      "Cloudflare": {
+        "version": "",
+        "hits": 1
+      },
+      "Gravatar": {
+        "version": "",
+        "hits": 1
+      },
+      "PWA": {
+        "version": "",
+        "hits": 1
+      },
+      "HTTP\/3": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/admin.shopify.com": {
+    "technologies": {
+      "Shopify": {
+        "version": "",
+        "hits": 1
+      },
+      "Node.js": {
+        "version": "",
+        "hits": 1
+      },
+      "Marko": {
+        "version": "",
+        "hits": 1
+      },
+      "React": {
+        "version": "",
+        "hits": 1
+      },
+      "PayPal": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Font API": {
+        "version": "",
+        "hits": 1
+      },
+      "core-js": {
+        "version": "3.29.1",
+        "hits": 1
+      },
+      "Google Analytics": {
+        "version": "GA4",
+        "hits": 1
+      },
+      "hCaptcha": {
+        "version": "",
+        "hits": 1
+      },
+      "HSTS": {
+        "version": "",
+        "hits": 1
+      },
+      "Cloudflare": {
+        "version": "",
+        "hits": 1
+      },
+      "Gravatar": {
+        "version": "",
+        "hits": 1
+      },
+      "HTTP\/3": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/aelia.co": {
+    "technologies": {
+      "Cart Functionality": {
+        "version": "",
+        "hits": 1
+      },
+      "WordPress": {
+        "version": "",
+        "hits": 1
+      },
+      "MySQL": {
+        "version": "",
+        "hits": 1
+      },
+      "PHP": {
+        "version": "",
+        "hits": 1
+      },
+      "WooCommerce": {
+        "version": "7.6.1",
+        "hits": 1
+      },
+      "Download Monitor": {
+        "version": "4.8.8",
+        "hits": 1
+      },
+      "Yoast SEO": {
+        "version": "20.13",
+        "hits": 1
+      },
+      "Nginx": {
+        "version": "",
+        "hits": 1
+      },
+      "WhatsApp Business Chat": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Font API": {
+        "version": "",
+        "hits": 1
+      },
+      "Select2": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Analytics Enhanced eCommerce": {
+        "version": "",
+        "hits": 1
+      },
+      "Autoptimize": {
+        "version": "",
+        "hits": 1
+      },
+      "jQuery Migrate": {
+        "version": "3.4.0",
+        "hits": 1
+      },
+      "jQuery": {
+        "version": "3.6.4",
+        "hits": 1
+      },
+      "Google Analytics": {
+        "version": "GA4",
+        "hits": 1
+      },
+      "HSTS": {
+        "version": "",
+        "hits": 1
+      },
+      "RSS": {
+        "version": "",
+        "hits": 1
+      },
+      "Open Graph": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/aircortex.com": {
+    "technologies": {
+      "YouTube": {
+        "version": "",
+        "hits": 1
+      },
+      "Nginx": {
+        "version": "",
+        "hits": 1
+      },
+      "OpenResty": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Font API": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/api.jorgeuos.com": {
+    "technologies": {
+      "PHP": {
+        "version": "8.1.16",
+        "hits": 1
+      },
+      "OpenSSL": {
+        "version": "1.0.2k",
+        "hits": 1
+      },
+      "Apache HTTP Server": {
+        "version": "2.4.57",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/app.butlerfortrello.com": {
+    "technologies": {
+      "Webpack": {
+        "version": "",
+        "hits": 1
+      },
+      "Module Federation": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/app.companiesoffice.govt.nz": {
+    "technologies": {
+      "Nginx": {
+        "version": "",
+        "hits": 1
+      },
+      "Handlebars": {
+        "version": "4.0.10",
+        "hits": 1
+      },
+      "HSTS": {
+        "version": "",
+        "hits": 1
+      },
+      "Moment.js": {
+        "version": "2.10.3",
+        "hits": 1
+      },
+      "jQuery UI": {
+        "version": "1.7.1",
+        "hits": 1
+      },
+      "core-js": {
+        "version": "2.6.12",
+        "hits": 1
+      },
+      "jQuery": {
+        "version": "1.4.2",
+        "hits": 1
+      },
+      "Google Tag Manager": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Analytics": {
+        "version": "GA4",
+        "hits": 1
+      },
+      "Babel": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/app.slack.com": {
+    "technologies": {
+      "Node.js": {
+        "version": "",
+        "hits": 1
+      },
+      "Marko": {
+        "version": "",
+        "hits": 1
+      },
+      "Envoy": {
+        "version": "",
+        "hits": 1
+      },
+      "React": {
+        "version": "",
+        "hits": 1
+      },
+      "Apache HTTP Server": {
+        "version": "",
+        "hits": 1
+      },
+      "Optimizely": {
+        "version": "",
+        "hits": 1
+      },
+      "core-js": {
+        "version": "2.6.12",
+        "hits": 1
+      },
+      "Twitter Ads": {
+        "version": "",
+        "hits": 1
+      },
+      "Reddit Ads": {
+        "version": "",
+        "hits": 1
+      },
+      "Podsights": {
+        "version": "",
+        "hits": 1
+      },
+      "OneTrust": {
+        "version": "",
+        "hits": 1
+      },
+      "LiveIntent": {
+        "version": "",
+        "hits": 1
+      },
+      "Highlight.js": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Tag Manager": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Analytics": {
+        "version": "GA4",
+        "hits": 1
+      },
+      "Demandbase": {
+        "version": "10.1.12",
+        "hits": 1
+      },
+      "Contentsquare": {
+        "version": "",
+        "hits": 1
+      },
+      "HSTS": {
+        "version": "",
+        "hits": 1
+      },
+      "Open Graph": {
+        "version": "",
+        "hits": 1
+      },
+      "Webpack": {
+        "version": "",
+        "hits": 1
+      },
+      "Gravatar": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/app4.greenhouse.io": {
+    "technologies": {
+      "Amazon Web Services": {
+        "version": "",
+        "hits": 1
+      },
+      "React": {
+        "version": "",
+        "hits": 1
+      },
+      "Greenhouse": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Analytics": {
+        "version": "",
+        "hits": 1
+      },
+      "HSTS": {
+        "version": "",
+        "hits": 1
+      },
+      "Amazon S3": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/arxiv.org": {
+    "technologies": {
+      "MathJax": {
+        "version": "2.7.3",
+        "hits": 1
+      },
+      "Apache HTTP Server": {
+        "version": "",
+        "hits": 1
+      },
+      "jsDelivr": {
+        "version": "",
+        "hits": 1
+      },
+      "jQuery CDN": {
+        "version": "",
+        "hits": 1
+      },
+      "jQuery": {
+        "version": "1.11.1",
+        "hits": 1
+      },
+      "HSTS": {
+        "version": "",
+        "hits": 1
+      },
+      "PWA": {
+        "version": "",
+        "hits": 1
+      },
+      "Open Graph": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/auth0.openai.com": {
+    "technologies": {
+      "Apple Sign-in": {
+        "version": "",
+        "hits": 1
+      },
+      "Auth0": {
+        "version": "",
+        "hits": 1
+      },
+      "reCAPTCHA": {
+        "version": "",
+        "hits": 1
+      },
+      "Cloudflare Bot Management": {
+        "version": "",
+        "hits": 1
+      },
+      "HSTS": {
+        "version": "",
+        "hits": 1
+      },
+      "Cloudflare": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/backoffice2.gardenglory.nu": {
+    "technologies": {
+      "Cart Functionality": {
+        "version": "",
+        "hits": 1
+      },
+      "Summernote": {
+        "version": "",
+        "hits": 1
+      },
+      "Chart.js": {
+        "version": "",
+        "hits": 1
+      },
+      "Bootstrap": {
+        "version": "4.5.2",
+        "hits": 1
+      },
+      "Microsoft ASP.NET": {
+        "version": "4.0.30319",
+        "hits": 1
+      },
+      "UPS": {
+        "version": "",
+        "hits": 1
+      },
+      "FedEx": {
+        "version": "",
+        "hits": 1
+      },
+      "Australia Post": {
+        "version": "",
+        "hits": 1
+      },
+      "Moment.js": {
+        "version": "",
+        "hits": 1
+      },
+      "SweetAlert2": {
+        "version": "10",
+        "hits": 1
+      },
+      "jsDelivr": {
+        "version": "",
+        "hits": 1
+      },
+      "cdnjs": {
+        "version": "",
+        "hits": 1
+      },
+      "Font Awesome": {
+        "version": "4.2.0",
+        "hits": 1
+      },
+      "jQuery CDN": {
+        "version": "",
+        "hits": 1
+      },
+      "jQuery": {
+        "version": "3.5.1",
+        "hits": 1
+      },
+      "Cloudflare": {
+        "version": "",
+        "hits": 1
+      },
+      "Popper": {
+        "version": "2.5.3",
+        "hits": 1
+      },
+      "HTTP\/3": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/bbo.se": {
+    "technologies": {
+      "Google Ads": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/blog.bytebytego.com": {
+    "technologies": {
+      "Substack": {
+        "version": "",
+        "hits": 1
+      },
+      "Sentry": {
+        "version": "",
+        "hits": 1
+      },
+      "Node.js": {
+        "version": "",
+        "hits": 1
+      },
+      "YouTube": {
+        "version": "",
+        "hits": 1
+      },
+      "Express": {
+        "version": "",
+        "hits": 1
+      },
+      "Priority Hints": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Font API": {
+        "version": "",
+        "hits": 1
+      },
+      "Preact": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Analytics": {
+        "version": "",
+        "hits": 1
+      },
+      "Cloudflare Browser Insights": {
+        "version": "",
+        "hits": 1
+      },
+      "Cloudflare Bot Management": {
+        "version": "",
+        "hits": 1
+      },
+      "HSTS": {
+        "version": "",
+        "hits": 1
+      },
+      "Cloudflare": {
+        "version": "",
+        "hits": 1
+      },
+      "RSS": {
+        "version": "",
+        "hits": 1
+      },
+      "Open Graph": {
+        "version": "",
+        "hits": 1
+      },
+      "HTTP\/3": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/box.developersbay.se": {
+    "technologies": {
+      "MUI": {
+        "version": "",
+        "hits": 1
+      },
+      "Amazon Web Services": {
+        "version": "",
+        "hits": 1
+      },
+      "styled-components": {
+        "version": "5.3.5",
+        "hits": 1
+      },
+      "Emotion": {
+        "version": "",
+        "hits": 1
+      },
+      "JSS": {
+        "version": "",
+        "hits": 1
+      },
+      "React": {
+        "version": "",
+        "hits": 1
+      },
+      "Lodash": {
+        "version": "4.17.21",
+        "hits": 1
+      },
+      "Font Awesome": {
+        "version": "",
+        "hits": 1
+      },
+      "core-js": {
+        "version": "3.12.1",
+        "hits": 1
+      },
+      "reCAPTCHA": {
+        "version": "",
+        "hits": 1
+      },
+      "Linkedin Insight Tag": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Tag Manager": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Analytics": {
+        "version": "GA4",
+        "hits": 1
+      },
+      "Facebook Pixel": {
+        "version": "",
+        "hits": 1
+      },
+      "Amazon S3": {
+        "version": "",
+        "hits": 1
+      },
+      "Amazon CloudFront": {
+        "version": "",
+        "hits": 1
+      },
+      "PWA": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/breakingpoint.se": {
+    "technologies": {
+      "WordPress": {
+        "version": "",
+        "hits": 1
+      },
+      "MySQL": {
+        "version": "",
+        "hits": 1
+      },
+      "PHP": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Maps": {
+        "version": "",
+        "hits": 1
+      },
+      "Backbone.js": {
+        "version": "1.4.0",
+        "hits": 1
+      },
+      "Yoast SEO": {
+        "version": "20.10",
+        "hits": 1
+      },
+      "Underscore.js": {
+        "version": "",
+        "hits": 1
+      },
+      "Kinsta": {
+        "version": "",
+        "hits": 1
+      },
+      "Cloudflare": {
+        "version": "",
+        "hits": 1
+      },
+      "AOS": {
+        "version": "",
+        "hits": 1
+      },
+      "core-js": {
+        "version": "3.19.1",
+        "hits": 1
+      },
+      "reCAPTCHA": {
+        "version": "",
+        "hits": 1
+      },
+      "jQuery": {
+        "version": "3.6.0",
+        "hits": 1
+      },
+      "Google Analytics": {
+        "version": "GA4",
+        "hits": 1
+      },
+      "cdnjs": {
+        "version": "",
+        "hits": 1
+      },
+      "HTTP\/3": {
+        "version": "",
+        "hits": 1
+      },
+      "Open Graph": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/breakingpoint.valei.com": {
+    "technologies": {
+      "Microsoft ASP.NET": {
+        "version": "",
+        "hits": 1
+      },
+      "Tailwind CSS": {
+        "version": "",
+        "hits": 1
+      },
+      "Blazor": {
+        "version": "",
+        "hits": 1
+      },
+      "Alpine.js": {
+        "version": "3.13.0",
+        "hits": 1
+      },
+      "Unpkg": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Analytics": {
+        "version": "GA4",
+        "hits": 1
+      },
+      "Fathom": {
+        "version": "",
+        "hits": 1
+      },
+      "PWA": {
+        "version": "",
+        "hits": 1
+      },
+      "Open Graph": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/calendly.com": {
+    "technologies": {
+      "GetFeedback": {
+        "version": "",
+        "hits": 1
+      },
+      "Ruby": {
+        "version": "",
+        "hits": 1
+      },
+      "Ruby on Rails": {
+        "version": "",
+        "hits": 1
+      },
+      "React": {
+        "version": "",
+        "hits": 1
+      },
+      "Stripe": {
+        "version": "3",
+        "hits": 1
+      },
+      "HSTS": {
+        "version": "",
+        "hits": 1
+      },
+      "Cloudflare": {
+        "version": "",
+        "hits": 1
+      },
+      "Segment": {
+        "version": "",
+        "hits": 1
+      },
+      "Optimizely": {
+        "version": "",
+        "hits": 1
+      },
+      "core-js": {
+        "version": "3.32.0",
+        "hits": 1
+      },
+      "reCAPTCHA": {
+        "version": "",
+        "hits": 1
+      },
+      "Pendo": {
+        "version": "",
+        "hits": 1
+      },
+      "OneTrust": {
+        "version": "",
+        "hits": 1
+      },
+      "Heap": {
+        "version": "4.19.3",
+        "hits": 1
+      },
+      "Google Analytics": {
+        "version": "",
+        "hits": 1
+      },
+      "Facebook Pixel": {
+        "version": "",
+        "hits": 1
+      },
+      "Cloudflare Bot Management": {
+        "version": "",
+        "hits": 1
+      },
+      "Calendly": {
+        "version": "",
+        "hits": 1
+      },
+      "Braze": {
+        "version": "3.1",
+        "hits": 1
+      },
+      "Open Graph": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/cdn.ingrid.com": {
+    "technologies": {
+      "Firebase": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/chat.openai.com": {
+    "technologies": {
+      "Sentry": {
+        "version": "",
+        "hits": 1
+      },
+      "Node.js": {
+        "version": "",
+        "hits": 1
+      },
+      "NextAuth.js": {
+        "version": "",
+        "hits": 1
+      },
+      "Headless UI": {
+        "version": "",
+        "hits": 1
+      },
+      "Tailwind CSS": {
+        "version": "",
+        "hits": 1
+      },
+      "React": {
+        "version": "",
+        "hits": 1
+      },
+      "Emotion": {
+        "version": "",
+        "hits": 1
+      },
+      "Next.js": {
+        "version": "13.3.4",
+        "hits": 1
+      },
+      "PubSubJS": {
+        "version": "",
+        "hits": 1
+      },
+      "Lodash": {
+        "version": "4.17.21",
+        "hits": 1
+      },
+      "Intercom": {
+        "version": "",
+        "hits": 1
+      },
+      "Datadog": {
+        "version": "",
+        "hits": 1
+      },
+      "core-js": {
+        "version": "3.30.2",
+        "hits": 1
+      },
+      "Cloudflare Bot Management": {
+        "version": "",
+        "hits": 1
+      },
+      "HSTS": {
+        "version": "",
+        "hits": 1
+      },
+      "Cloudflare": {
+        "version": "",
+        "hits": 1
+      },
+      "Open Graph": {
+        "version": "",
+        "hits": 1
+      },
+      "HTTP\/3": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/chipolo.net": {
+    "technologies": {
+      "Google Ads": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/cmore.com": {
+    "technologies": {
+      "PayPal": {
+        "version": "",
+        "hits": 1
+      },
+      "Apache HTTP Server": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Font API": {
+        "version": "",
+        "hits": 1
+      },
+      "Dojo": {
+        "version": "1",
+        "hits": 1
+      },
+      "MailChimp": {
+        "version": "",
+        "hits": 1
+      },
+      "jQuery": {
+        "version": "3.6.1",
+        "hits": 1
+      },
+      "Open Graph": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  },
+  "https:\/\/cookieinformation.com": {
+    "technologies": {
+      "WordPress": {
+        "version": "6.1.1",
+        "hits": 1
+      },
+      "MySQL": {
+        "version": "",
+        "hits": 1
+      },
+      "PHP": {
+        "version": "7.4.10",
+        "hits": 1
+      },
+      "Google Maps": {
+        "version": "",
+        "hits": 1
+      },
+      "Hello Elementor": {
+        "version": "2.5.0",
+        "hits": 1
+      },
+      "Yoast SEO Premium": {
+        "version": "20.12",
+        "hits": 1
+      },
+      "Yoast SEO": {
+        "version": "20.12",
+        "hits": 1
+      },
+      "GSAP": {
+        "version": "3.7.1",
+        "hits": 1
+      },
+      "Elementor": {
+        "version": "",
+        "hits": 1
+      },
+      "WP Rocket": {
+        "version": "",
+        "hits": 1
+      },
+      "Ivory Search": {
+        "version": "5.5.2",
+        "hits": 1
+      },
+      "Essential Addons for Elementor": {
+        "version": "",
+        "hits": 1
+      },
+      "Vue.js": {
+        "version": "2.6.11",
+        "hits": 1
+      },
+      "Apache HTTP Server": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Ads": {
+        "version": "",
+        "hits": 1
+      },
+      "Reddit Ads": {
+        "version": "",
+        "hits": 1
+      },
+      "HubSpot Analytics": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Analytics": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Ads Conversion Tracking": {
+        "version": "",
+        "hits": 1
+      },
+      "Google Font API": {
+        "version": "",
+        "hits": 1
+      },
+      "Microsoft Clarity": {
+        "version": "0.7.10",
+        "hits": 1
+      },
+      "Linkedin Insight Tag": {
+        "version": "",
+        "hits": 1
+      },
+      "Leadfeeder": {
+        "version": "",
+        "hits": 1
+      },
+      "jQuery UI": {
+        "version": "1.13.2",
+        "hits": 1
+      },
+      "Intercom": {
+        "version": "",
+        "hits": 1
+      },
+      "HubSpot": {
+        "version": "",
+        "hits": 1
+      },
+      "Facebook Pixel": {
+        "version": "",
+        "hits": 1
+      },
+      "core-js": {
+        "version": "3.19.1",
+        "hits": 1
+      },
+      "Cookie Information": {
+        "version": "",
+        "hits": 1
+      },
+      "WPML": {
+        "version": "4.6.4",
+        "hits": 1
+      },
+      "Piwik PRO Core": {
+        "version": "",
+        "hits": 1
+      },
+      "Microsoft Advertising": {
+        "version": "",
+        "hits": 1
+      },
+      "jQuery Migrate": {
+        "version": "3.3.2",
+        "hits": 1
+      },
+      "jQuery": {
+        "version": "3.6.1",
+        "hits": 1
+      },
+      "Font Awesome": {
+        "version": "",
+        "hits": 1
+      },
+      "Webpack": {
+        "version": "",
+        "hits": 1
+      },
+      "RSS": {
+        "version": "",
+        "hits": 1
+      },
+      "Open Graph": {
+        "version": "",
+        "hits": 1
+      },
+      "Popper": {
+        "version": "",
+        "hits": 1
+      },
+      "Gravatar": {
+        "version": "",
+        "hits": 1
+      },
+      "Module Federation": {
+        "version": "",
+        "hits": 1
+      }
+    },
+    "meta": {
+      "language": "sv"
+    }
+  }
+}

@@ -456,7 +456,6 @@
       87
     ],
     "description": "LearnDash is a WordPress plugin that enables the creation and management of online courses, quizzes, and educational content within a website.",
-    "icon": "LearnDash.svg",
     "dom": {
       "link[href*='/wp-content/plugins/sfwd-lms/']": {
         "attributes": {
@@ -464,12 +463,13 @@
         }
       }
     },
-    "requires": "WordPress",
+    "icon": "LearnDash.svg",
     "pricing": [
       "low",
       "onetime",
       "recurring"
     ],
+    "requires": "WordPress",
     "website": "https://www.learndash.com"
   },
   "LearnWorlds": {

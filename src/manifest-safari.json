@@ -1,8 +1,8 @@
 {
-  "name": "Wappalyzer",
-  "short_name": "Wappalyzer",
-  "author": "Wappalyzer",
-  "homepage_url": "https://www.wappalyzer.com/",
+  "name": "Trackalyzer",
+  "short_name": "Trackalyzer",
+  "author": "Trackalyzer",
+  "homepage_url": "https://www.jorgeuos.com/",
   "description": "Identify web technologies",
   "version": "6.8.15",
   "default_locale": "en",
@@ -30,7 +30,7 @@
       "512": "images/safari.svg",
       "1024": "images/safari.svg"
     },
-    "default_title": "Wappalyzer",
+    "default_title": "Trackalyzer",
     "default_popup": "html/popup.html"
   },
   "background": {

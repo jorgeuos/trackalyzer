@@ -5,7 +5,7 @@
 const { agent, open, i18n, getOption, setOption, promisify, sendMessage } =
   Utils
 
-const baseUrl = 'https://www.wappalyzer.com'
+const baseUrl = 'https://jorgeuos.com'
 const utm = '?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer'
 
 const footers = [

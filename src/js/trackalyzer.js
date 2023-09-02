@@ -67,7 +67,7 @@ function benchmarkSummary() {
   })
 }
 
-const Wappalyzer = {
+const Trackalyzer = {
   technologies: [],
   categories: [],
   requires: [],
@@ -82,14 +82,14 @@ const Wappalyzer = {
 
   getTechnology: (name) =>
     [
-      ...Wappalyzer.technologies,
-      ...Wappalyzer.requires.map(({ technologies }) => technologies).flat(),
-      ...Wappalyzer.categoryRequires
+      ...Trackalyzer.technologies,
+      ...Trackalyzer.requires.map(({ technologies }) => technologies).flat(),
+      ...Trackalyzer.categoryRequires
         .map(({ technologies }) => technologies)
         .flat(),
     ].find(({ name: _name }) => name === _name),
 
-  getCategory: (id) => Wappalyzer.categories.find(({ id: _id }) => id === _id),
+  getCategory: (id) => Trackalyzer.categories.find(({ id: _id }) => id === _id),
 
   /**
    * Resolve promises for implied technology.
@@ -135,12 +135,12 @@ const Wappalyzer = {
       return resolved
     }, [])
 
-    Wappalyzer.resolveExcludes(resolved)
-    Wappalyzer.resolveImplies(resolved)
+    Trackalyzer.resolveExcludes(resolved)
+    Trackalyzer.resolveImplies(resolved)
 
     const priority = ({ technology: { categories } }) =>
       categories.reduce(
-        (max, id) => Math.max(max, Wappalyzer.getCategory(id).priority),
+        (max, id) => Math.max(max, Trackalyzer.getCategory(id).priority),
         0
       )
 
@@ -166,7 +166,7 @@ const Wappalyzer = {
           name,
           description,
           slug,
-          categories: categories.map((id) => Wappalyzer.getCategory(id)),
+          categories: categories.map((id) => Trackalyzer.getCategory(id)),
           confidence,
           version,
           icon,
@@ -229,7 +229,7 @@ const Wappalyzer = {
   resolveExcludes(resolved) {
     resolved.forEach(({ technology }) => {
       technology.excludes.forEach(({ name }) => {
-        const excluded = Wappalyzer.getTechnology(name)
+        const excluded = Trackalyzer.getTechnology(name)
 
         if (!excluded) {
           throw new Error(`Excluded technology does not exist: ${name}`)
@@ -263,7 +263,7 @@ const Wappalyzer = {
       resolved.forEach(({ technology, confidence, lastUrl }) => {
         technology.implies.forEach(
           ({ name, confidence: _confidence, version }) => {
-            const implied = Wappalyzer.getTechnology(name)
+            const implied = Trackalyzer.getTechnology(name)
 
             if (!implied) {
               throw new Error(`Implied technology does not exist: ${name}`)
@@ -293,12 +293,12 @@ const Wappalyzer = {
    * Initialize analyzation.
    * @param {*} param0
    */
-  analyze(items, technologies = Wappalyzer.technologies) {
+  analyze(items, technologies = Trackalyzer.technologies) {
     benchmarks = []
 
-    const oo = Wappalyzer.analyzeOneToOne
-    const om = Wappalyzer.analyzeOneToMany
-    const mm = Wappalyzer.analyzeManyToMany
+    const oo = Trackalyzer.analyzeOneToOne
+    const om = Trackalyzer.analyzeOneToMany
+    const mm = Trackalyzer.analyzeManyToMany
 
     const relations = {
       certIssuer: oo,
@@ -343,125 +343,128 @@ const Wappalyzer = {
    * @param {object} data
    */
   setTechnologies(data) {
-    const transform = Wappalyzer.transformPatterns
+    const transform = Trackalyzer.transformPatterns
 
-    Wappalyzer.technologies = Object.keys(data).reduce((technologies, name) => {
-      const {
-        cats,
-        certIssuer,
-        cookies,
-        cpe,
-        css,
-        description,
-        dns,
-        dom,
-        excludes,
-        headers,
-        html,
-        icon,
-        implies,
-        js,
-        meta,
-        pricing,
-        probe,
-        requires,
-        requiresCategory,
-        robots,
-        scriptSrc,
-        scripts,
-        text,
-        url,
-        website,
-        xhr,
-      } = data[name]
+    Trackalyzer.technologies = Object.keys(data).reduce(
+      (technologies, name) => {
+        const {
+          cats,
+          certIssuer,
+          cookies,
+          cpe,
+          css,
+          description,
+          dns,
+          dom,
+          excludes,
+          headers,
+          html,
+          icon,
+          implies,
+          js,
+          meta,
+          pricing,
+          probe,
+          requires,
+          requiresCategory,
+          robots,
+          scriptSrc,
+          scripts,
+          text,
+          url,
+          website,
+          xhr,
+        } = data[name]
 
-      technologies.push({
-        categories: cats || [],
-        certIssuer: transform(certIssuer),
-        cookies: transform(cookies),
-        cpe: cpe || null,
-        css: transform(css),
-        description: description || null,
-        dns: transform(dns),
-        dom: transform(
-          typeof dom === 'string' || Array.isArray(dom)
-            ? toArray(dom).reduce(
-                (dom, selector) => ({ ...dom, [selector]: { exists: '' } }),
-                {}
-              )
-            : dom,
-          true,
-          false
-        ),
-        excludes: transform(excludes).map(({ value }) => ({ name: value })),
-        headers: transform(headers),
-        html: transform(html),
-        icon: icon || 'default.svg',
-        implies: transform(implies).map(({ value, confidence, version }) => ({
-          name: value,
-          confidence,
-          version,
-        })),
-        js: transform(js, true),
-        meta: transform(meta),
-        name,
-        pricing: pricing || [],
-        probe: transform(probe, true),
-        requires: transform(requires).map(({ value }) => ({ name: value })),
-        requiresCategory: transform(requiresCategory).map(({ value }) => ({
-          id: value,
-        })),
-        robots: transform(robots),
-        scriptSrc: transform(scriptSrc),
-        scripts: transform(scripts),
-        slug: Wappalyzer.slugify(name),
-        text: transform(text),
-        url: transform(url),
-        website: website || null,
-        xhr: transform(xhr),
-      })
+        technologies.push({
+          categories: cats || [],
+          certIssuer: transform(certIssuer),
+          cookies: transform(cookies),
+          cpe: cpe || null,
+          css: transform(css),
+          description: description || null,
+          dns: transform(dns),
+          dom: transform(
+            typeof dom === 'string' || Array.isArray(dom)
+              ? toArray(dom).reduce(
+                  (dom, selector) => ({ ...dom, [selector]: { exists: '' } }),
+                  {}
+                )
+              : dom,
+            true,
+            false
+          ),
+          excludes: transform(excludes).map(({ value }) => ({ name: value })),
+          headers: transform(headers),
+          html: transform(html),
+          icon: icon || 'default.svg',
+          implies: transform(implies).map(({ value, confidence, version }) => ({
+            name: value,
+            confidence,
+            version,
+          })),
+          js: transform(js, true),
+          meta: transform(meta),
+          name,
+          pricing: pricing || [],
+          probe: transform(probe, true),
+          requires: transform(requires).map(({ value }) => ({ name: value })),
+          requiresCategory: transform(requiresCategory).map(({ value }) => ({
+            id: value,
+          })),
+          robots: transform(robots),
+          scriptSrc: transform(scriptSrc),
+          scripts: transform(scripts),
+          slug: Trackalyzer.slugify(name),
+          text: transform(text),
+          url: transform(url),
+          website: website || null,
+          xhr: transform(xhr),
+        })
 
-      return technologies
-    }, [])
+        return technologies
+      },
+      []
+    )
 
-    Wappalyzer.technologies
+    Trackalyzer.technologies
       .filter(({ requires }) => requires.length)
       .forEach((technology) =>
         technology.requires.forEach(({ name }) => {
-          if (!Wappalyzer.getTechnology(name)) {
+          if (!Trackalyzer.getTechnology(name)) {
             throw new Error(`Required technology does not exist: ${name}`)
           }
 
-          Wappalyzer.requires[name] = Wappalyzer.requires[name] || []
+          Trackalyzer.requires[name] = Trackalyzer.requires[name] || []
 
-          Wappalyzer.requires[name].push(technology)
+          Trackalyzer.requires[name].push(technology)
         })
       )
 
-    Wappalyzer.requires = Object.keys(Wappalyzer.requires).map((name) => ({
+    Trackalyzer.requires = Object.keys(Trackalyzer.requires).map((name) => ({
       name,
-      technologies: Wappalyzer.requires[name],
+      technologies: Trackalyzer.requires[name],
     }))
 
-    Wappalyzer.technologies
+    Trackalyzer.technologies
       .filter(({ requiresCategory }) => requiresCategory.length)
       .forEach((technology) =>
         technology.requiresCategory.forEach(({ id }) => {
-          Wappalyzer.categoryRequires[id] =
-            Wappalyzer.categoryRequires[id] || []
+          Trackalyzer.categoryRequires[id] =
+            Trackalyzer.categoryRequires[id] || []
 
-          Wappalyzer.categoryRequires[id].push(technology)
+          Trackalyzer.categoryRequires[id].push(technology)
         })
       )
 
-    Wappalyzer.categoryRequires = Object.keys(Wappalyzer.categoryRequires).map(
-      (id) => ({
-        categoryId: parseInt(id, 10),
-        technologies: Wappalyzer.categoryRequires[id],
-      })
-    )
+    Trackalyzer.categoryRequires = Object.keys(
+      Trackalyzer.categoryRequires
+    ).map((id) => ({
+      categoryId: parseInt(id, 10),
+      technologies: Trackalyzer.categoryRequires[id],
+    }))
 
-    Wappalyzer.technologies = Wappalyzer.technologies.filter(
+    Trackalyzer.technologies = Trackalyzer.technologies.filter(
       ({ requires, requiresCategory }) =>
         !requires.length && !requiresCategory.length
     )
@@ -472,13 +475,13 @@ const Wappalyzer = {
    * @param {Object} data
    */
   setCategories(data) {
-    Wappalyzer.categories = Object.keys(data)
+    Trackalyzer.categories = Object.keys(data)
       .reduce((categories, id) => {
         const category = data[id]
 
         categories.push({
           id: parseInt(id, 10),
-          slug: Wappalyzer.slugify(category.name),
+          slug: Trackalyzer.slugify(category.name),
           ...category,
         })
 
@@ -508,7 +511,7 @@ const Wappalyzer = {
     const parsed = Object.keys(patterns).reduce((parsed, key) => {
       parsed[caseSensitive ? key : key.toLowerCase()] = toArray(
         patterns[key]
-      ).map((pattern) => Wappalyzer.parsePattern(pattern, isRegex))
+      ).map((pattern) => Trackalyzer.parsePattern(pattern, isRegex))
 
       return parsed
     }, {})
@@ -525,7 +528,7 @@ const Wappalyzer = {
       return Object.keys(pattern).reduce(
         (parsed, key) => ({
           ...parsed,
-          [key]: Wappalyzer.parsePattern(pattern[key]),
+          [key]: Trackalyzer.parsePattern(pattern[key]),
         }),
         {}
       )
@@ -592,7 +595,7 @@ const Wappalyzer = {
             value,
             match: matches[0],
           },
-          version: Wappalyzer.resolveVersion(pattern, value),
+          version: Trackalyzer.resolveVersion(pattern, value),
         })
       }
 
@@ -626,7 +629,7 @@ const Wappalyzer = {
               value,
               match: matches[0],
             },
-            version: Wappalyzer.resolveVersion(pattern, value),
+            version: Trackalyzer.resolveVersion(pattern, value),
           })
         }
 
@@ -670,7 +673,7 @@ const Wappalyzer = {
                 value,
                 match: matches[0],
               },
-              version: Wappalyzer.resolveVersion(pattern, value),
+              version: Trackalyzer.resolveVersion(pattern, value),
             })
           }
 
@@ -684,5 +687,5 @@ const Wappalyzer = {
 }
 
 if (typeof module !== 'undefined') {
-  module.exports = Wappalyzer
+  module.exports = Trackalyzer
 }
