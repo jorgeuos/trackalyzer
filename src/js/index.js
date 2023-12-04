@@ -116,6 +116,10 @@ const Driver = {
    */
   log(message, source = 'driver', type = 'log') {
     // eslint-disable-next-line no-console
+    console.log('type, source, message')
+    // eslint-disable-next-line no-console
+    console.log(type, source, message)
+    // eslint-disable-next-line no-console
     console[type](message)
   },
 

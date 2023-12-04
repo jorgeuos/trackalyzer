@@ -1127,8 +1127,7 @@
     "icon": "Matomo.svg",
     "js": {
       "Matomo": "",
-      "Piwik": "",
-      "_paq": ""
+      "Piwik": ""
     },
     "meta": {
       "apple-itunes-app": "app-id=737216887",
