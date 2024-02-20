@@ -1068,6 +1068,26 @@
     "scriptSrc": "\\.vizury\\.com",
     "website": "https://www.vizury.com"
   },
+  "Vizzit": {
+    "cats": [
+      10
+    ],
+    "cookies": {
+      "___vizzit": ""
+    },
+    "description": "Vizzit provides you with easy-to-read visitor statistics, insights into your customers’ behaviours.",
+    "icon": "logo_vizzit.png",
+    "js": {
+      "vizzit": "",
+      "vizzit.integration": ""
+    },
+    "pricing": [
+      "poa"
+    ],
+    "saas": true,
+    "scriptSrc": "vizzit\\.js|vizzit.integration\\.js",
+    "website": "https://www.vizzit.se/"
+  },
   "Vnda": {
     "cats": [
       6

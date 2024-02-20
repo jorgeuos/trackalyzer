@@ -1,9 +1,9 @@
 {
-  "name": "Trackalyzer - Tracker analyzer",
+  "name": "Trackalyzer - Technology profiler",
   "short_name": "Trackalyzer",
   "author": "Trackalyzer",
   "homepage_url": "https://www.trackalyzer.com/",
-  "description": "Track the trackers",
+  "description": "Identify web technologies",
   "version": "6.10.67",
   "default_locale": "en",
   "manifest_version": 3,
@@ -30,7 +30,7 @@
       "512": "images/icon_512.png",
       "1024": "images/icon_1024.png"
     },
-    "default_title": "Trackalyzer",
+    "default_title": "Wappalyzer",
     "default_popup": "html/popup.html"
   },
   "background": {
